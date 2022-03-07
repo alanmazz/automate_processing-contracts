@@ -1,6 +1,8 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Contract {
 	
@@ -8,7 +10,7 @@ public class Contract {
 	private Date date;
 	private Double totalValue;
 	
-	private Installment installment;
+	List<Installment> installments = new ArrayList<Installment>();
 	
 	public Contract() {
 	}
@@ -43,16 +45,10 @@ public class Contract {
 		this.totalValue = totalValue;
 	}
 
-	public Installment getInstallment() {
-		return installment;
-	}
-
-	public void setInstallment(Installment installment) {
-		this.installment = installment;
+	public List<Installment> getInstallments() {
+		return installments;
 	}
 	
-	public double getPartialPayment() {
-		return totalValue / installment.getAmount();
-	}
+	
 	
 }
