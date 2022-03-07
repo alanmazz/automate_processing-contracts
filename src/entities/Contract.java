@@ -51,6 +51,8 @@ public class Contract {
 		this.installment = installment;
 	}
 	
+	public double getPartialPayment() {
+		return totalValue / installment.getAmount();
+	}
 	
-
 }
