@@ -5,12 +5,12 @@ import java.util.Date;
 public class Installment {
 	
 	protected Date dueDate;
-	protected Integer amount;
+	protected Double amount;
 	
 	public Installment() {
 	}
 
-	public Installment(Date dueDate, Integer amount) {
+	public Installment(Date dueDate, Double amount) {
 		this.dueDate = dueDate;
 		this.amount = amount;
 	}
@@ -23,11 +23,11 @@ public class Installment {
 		this.dueDate = dueDate;
 	}
 
-	public Integer getAmount() {
+	public Double getAmount() {
 		return amount;
 	}
 
-	public void setAmount(Integer amount) {
+	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
 	
